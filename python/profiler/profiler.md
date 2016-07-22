@@ -140,17 +140,17 @@ f(x)が実行され，同時にプロファイル結果が表示される．
     p.sort_stats('calls', )
 を実行し，呼び出し回数順にソートした．
 
-　　　　251006 function calls in 4.382 seconds
-　　　　
-　　　　Ordered by: call count
-　　　　
-　　　　ncalls  tottime  percall  cumtime  percall filename:lineno(function)
-　　　　250501    4.340    0.000    4.340    0.000 sample.py:1(f1)
-　　　　　　501    0.041    0.000    4.382    0.009 sample.py:7(f2)
-　　　　　　　　1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
-　　　　　　　　1    0.000    0.000    4.373    4.373 sample.py:13(f3)
-　　　　　　　　1    0.000    0.000    4.382    4.382 sample.py:1(<module>)
-　　　　　　　　1    0.000    0.000    4.382    4.382 {built-in method builtins.exec}
+    251006 function calls in 4.382 seconds
+
+    Ordered by: call count
+
+    ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+    250501    4.340    0.000    4.340    0.000 sample.py:1(f1)
+       501    0.041    0.000    4.382    0.009 sample.py:7(f2)
+         1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+         1    0.000    0.000    4.373    4.373 sample.py:13(f3)
+         1    0.000    0.000    4.382    4.382 sample.py:1(<module>)
+         1    0.000    0.000    4.382    4.382 {built-in method builtins.exec}
 <!--_-->
 
     p.print_stats(3)
