@@ -6,19 +6,16 @@ def f1(n):
 
 def f2(n):
     counter = 0
-    for i in range(n):
-        for j in range(n):
-            counter += 1
+    for j in range(n):
+        f1(n)
     return counter
 
 def f3(n):
     counter = 0
-    for i in range(n):
-        for j in range(n):
-            for k in range(n):
-                counter += 1
+    for k in range(n):
+        f2(n)
     return counter
 
-f1(1000)
-f2(1000)
-f3(1000)
+f1(500)
+f2(500)
+f3(500)
