@@ -178,6 +178,7 @@ f(x)が実行され，同時にプロファイル結果が表示される．
     ncalls  tottime  percall  cumtime  percall filename:lineno(function)
     250501    4.340    0.000    4.340    0.000 sample.py:1(f1)
        501    0.041    0.000    4.382    0.009 sample.py:7(f2)
+<!--_-->
 
     p.print_callers(.3, 'sample')
 このように実行すると，上位30%でありかつファイル名，行番号，関数名の一部に文字列'sample'を含む関数が，どの関数に何回呼び出されたかを調べることができる．
@@ -187,9 +188,9 @@ f(x)が実行され，同時にプロファイル結果が表示される．
 
     Function         was called by...
                       ncalls  tottime  cumtime
-    sample.py:1(f1)  <-       1    0.000    0.000  sample.py:1(<module>)
+    sample.py:1(f1)  <-    1    0.000    0.000  sample.py:1(<module>)
                       250500    4.340    4.340  sample.py:7(f2)
-    sample.py:7(f2)  <-       1    0.000    0.009  sample.py:1(<module>)
+    sample.py:7(f2)  <-    1    0.000    0.009  sample.py:1(<module>)
                          500    0.041    4.373  sample.py:13(f3)
 
 # 参考文献
